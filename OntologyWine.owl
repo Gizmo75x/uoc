@@ -1,0 +1,898 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine.owl/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Created by David Pardo Lozano</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Ontology on Spanish wines</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Barrel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cellar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crianza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Set_Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food_With_Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grand_Reserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grape_Percentage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soil_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sparkling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vineyard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vineyard_Cultivation_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#White"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine_Region_Of_Spain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine_Tasting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Young"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongingTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isClassifiedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name_Cellar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name_Dataset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name_Region"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name_Wine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Wine_Quality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#year"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bodegas_Valduero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#La_Rioja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Remirez_de_Ganuza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spanish_Wine_Quality_DataSet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tinto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Crianza"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grand_Reserve"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pink"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reserve"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sparkling"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#White"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Young"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#High"/>
+        <Class IRI="#Low"/>
+        <Class IRI="#Medium"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Cellar"/>
+        <NamedIndividual IRI="#Bodegas_Valduero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine_Region_Of_Spain"/>
+        <NamedIndividual IRI="#La_Rioja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quality"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Red"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cellar"/>
+        <NamedIndividual IRI="#Remirez_de_Ganuza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cellar"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine_Region_Of_Spain"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grand_Reserve"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Medium"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quality"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine_Region_Of_Spain"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Set_Quality"/>
+        <NamedIndividual IRI="#Spanish_Wine_Quality_DataSet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cellar"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low"/>
+        <NamedIndividual IRI="#Tinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quality"/>
+        <NamedIndividual IRI="#Tinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Red"/>
+        <NamedIndividual IRI="#Tinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Tinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine_Region_Of_Spain"/>
+        <NamedIndividual IRI="#Toro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#High"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quality"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reserve"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cellar"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongingTo"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+        <NamedIndividual IRI="#La_Rioja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isClassifiedIn"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+        <NamedIndividual IRI="#Spanish_Wine_Quality_DataSet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFrom"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+        <NamedIndividual IRI="#Remirez_de_Ganuza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongingTo"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isClassifiedIn"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+        <NamedIndividual IRI="#Spanish_Wine_Quality_DataSet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFrom"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+        <NamedIndividual IRI="#Bodegas_Valduero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongingTo"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#Toro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isClassifiedIn"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#Spanish_Wine_Quality_DataSet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFrom"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isClassifiedIn"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+        <NamedIndividual IRI="#Spanish_Wine_Quality_DataSet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFrom"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFrom"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Cellar"/>
+        <NamedIndividual IRI="#Bodegas_Valduero"/>
+        <Literal>Bodegas Valduero</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Region"/>
+        <NamedIndividual IRI="#La_Rioja"/>
+        <Literal>La rioja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Wine"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+        <Literal>Maria Remirez de Ganuza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Wine_Quality"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#Maria_Remirez_de_Ganuza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Cellar"/>
+        <NamedIndividual IRI="#Remirez_de_Ganuza"/>
+        <Literal>Remirez de Ganuza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Region"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+        <Literal>Ribera del Duero</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Wine"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+        <Literal>Ribera Del Duero Gran Reserva 12 Años</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Wine_Quality"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1999</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Wine_Quality"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Gran_Reserva_12_años"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Region"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+        <Literal>Ribera del Duero Red</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Dataset"/>
+        <NamedIndividual IRI="#Spanish_Wine_Quality_DataSet"/>
+        <Literal>Spanish Wine Quality Dataset</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Cellar"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal>Teso La Monja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Wine"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal>Tinto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Wine_Quality"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2015</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Region"/>
+        <NamedIndividual IRI="#Toro"/>
+        <Literal>Toro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Wine"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+        <Literal>Unico Reserva Especial Edicion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Wine_Quality"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#Unico_Reserva_Especial_Edicion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name_Cellar"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+        <Literal>Vega Sicilia</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongingTo"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isClassifiedIn"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFrom"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongingTo"/>
+        <Class IRI="#Wine_Region_Of_Spain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isClassifiedIn"/>
+        <Class IRI="#Data_Set_Quality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFrom"/>
+        <Class IRI="#Cellar"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name_Cellar"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name_Dataset"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name_Region"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name_Wine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Rating"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Wine_Quality"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name_Cellar"/>
+        <Class IRI="#Cellar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name_Dataset"/>
+        <Class IRI="#Data_Set_Quality"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name_Region"/>
+        <Class IRI="#Wine_Region_Of_Spain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name_Wine"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Rating"/>
+        <Class IRI="#Data_Set_Quality"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Wine_Quality"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#year"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name_Cellar"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name_Dataset"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name_Region"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name_Wine"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Rating"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Wine_Quality"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#year"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Medium quality</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#Wine_Quality"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/h"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Medium"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>High Quality</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#Wine_Quality"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/h"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#High"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Low Quality</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#Wine_Quality"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/h"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+            </ClassAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Low"/>
+                <Variable IRI="http://www.semanticweb.org/davidin/ontologies/2023/3/OntologySpanishWine/v"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Barrel</IRI>
+        <Literal>Wine barrel where it is preserved</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cellar</IRI>
+        <Literal>Winery that made the wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Crianza</IRI>
+        <Literal>Wine called crianza.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data_Set_Quality</IRI>
+        <Literal>Data Set where the wine was classified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Food_With_Wine</IRI>
+        <Literal>Food that goes well with wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Grand_Reserve</IRI>
+        <Literal>Wine called Gran Reserva.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Grape</IRI>
+        <Literal>Types of grapes to make wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Grape_Percentage</IRI>
+        <Literal>Wine grape percentage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#High</IRI>
+        <Literal>Generally high wine quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Low</IRI>
+        <Literal>Generally low wine quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medium</IRI>
+        <Literal>Generally medium wine quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Name_Cellar</IRI>
+        <Literal>Name of the winery where the wine comes from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Name_Dataset</IRI>
+        <Literal>Wine Classification Table Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Name_Region</IRI>
+        <Literal>Name of the region where the wine comes from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Name_Wine</IRI>
+        <Literal>Name Wine name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pink</IRI>
+        <Literal>Wine called rosé.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Quality</IRI>
+        <Literal>Overall wine quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rating</IRI>
+        <Literal>Rating awarded from the wine classification table</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Red</IRI>
+        <Literal>Wine called red.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reserve</IRI>
+        <Literal>Wine called Reserva.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Ribera_del_Duero</IRI>
+        <IRI>https://es.dbpedia.org/resource/Ribera_del_Duero_(vino)</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Soil_Type</IRI>
+        <Literal>Type of soil where the grapes were planted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sparkling</IRI>
+        <Literal>Sparkling Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Table</IRI>
+        <Literal>Table wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Vega_Sicilia</IRI>
+        <IRI>https://es.dbpedia.org/resource/Vega_Sicilia</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vineyard</IRI>
+        <Literal>Vineyard where the wine grapes came from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vineyard_Cultivation_System</IRI>
+        <Literal>Type of irrigation and grape cultivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#White</IRI>
+        <Literal>Wine called white.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine</IRI>
+        <Literal>Wine characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine_Quality</IRI>
+        <Literal>Overall wine quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine_Region_Of_Spain</IRI>
+        <Literal>Spanish region with denomination where the wine is from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine_Tasting</IRI>
+        <Literal>Description of the wine tasting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Young</IRI>
+        <Literal>Wine called young.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongingTo</IRI>
+        <Literal>A wine belongs to the region of .....</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isClassifiedIn</IRI>
+        <Literal>The wine is classified in the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFrom</IRI>
+        <Literal>The wine is from the winery.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#year</IRI>
+        <Literal>wine year</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
